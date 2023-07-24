@@ -13,7 +13,7 @@ spec:
     metadata: 
       labels:
 # set your lab user name
-       app: {{ .Release.Name }}
+        app: {{ .Release.Name }}
     spec:
       containers:
         - resources: {}
