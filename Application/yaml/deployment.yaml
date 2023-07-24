@@ -33,3 +33,7 @@ spec:
       maxUnavailable: 25%
       maxSurge: 25%
   revisionHistoryLimit: 10
+      spec:
+      containers:
+          name: hello-world
+          image: 'quay.io/<quay-userName>/<imageName>:v2'
