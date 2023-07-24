@@ -10,7 +10,8 @@ spec:
 # set your lab user name
       app: {{ .Release.Name }}
   template:
-    metadata: {{ .Release.Name }}
+    metadata: 
+    app: {{ .Release.Name }}
       labels:
 # set your lab user name
         app: {{ .Release.Name }}
