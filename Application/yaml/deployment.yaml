@@ -24,7 +24,7 @@ spec:
               protocol: TCP
           imagePullPolicy: IfNotPresent
 # update with the image you build in part 1
-          image: 'quay.io/drorbr1/bramly:v1'
+          image: 'quay.io/drorbr1/bramly:v2'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
   strategy:
@@ -33,7 +33,4 @@ spec:
       maxUnavailable: 25%
       maxSurge: 25%
   revisionHistoryLimit: 10
-      spec:
-      containers:
-          name: hello-world
-          image: 'quay.io/<quay-userName>/<imageName>:v2'
+    
