@@ -55,7 +55,7 @@ spec:
                       successThreshold: 1
                       failureThreshold: 3
                       # update with the image you build in part 1
-          image: {{ .Values.containers.image }}:{{ .Values.containers.tag }}
+      image: {{ .Values.containers.image }}:{{ .Values.containers.tag }}
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
   strategy:
