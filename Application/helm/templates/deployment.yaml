@@ -45,15 +45,15 @@ spec:
                     successThreshold: 1 # count to decalre seccessfull 
                     failureThreshold: 3 # count to decalre failure
       livenessProbe:
-                      httpGet:
+                     httpGet:
                         path: /health/liveliness
                         port: {{ .Values.containers.containerPort }}
                         scheme: HTTP
-                      initialDelaySeconds: 1
-                      timeoutSeconds: 1
-                      periodSeconds: 10
-                      successThreshold: 1
-                      failureThreshold: 3
+                        initialDelaySeconds: 1
+                        timeoutSeconds: 1
+                        periodSeconds: 10
+                        successThreshold: 1
+                        failureThreshold: 3
                       # update with the image you build in part 1
       image: {{ .Values.containers.image }}:{{ .Values.containers.tag }}
       restartPolicy: Always
